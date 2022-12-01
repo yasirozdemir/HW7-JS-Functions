@@ -67,17 +67,21 @@ crazySum(4, 4);
 titleCreator("EXERCISE 3", "---");
 
 function crazyDiff(num1) {
-  let difference;
+  // we can use Math.abs() method but I didn't want to use it since the second number is given by
+  let difference; // the instructor. Using if condition I prevented the result be a negative number.
+  let tripleOfDifference;
   if (num1 >= 19) {
     difference = num1 - 19;
+    tripleOfDifference = difference * 3;
     console.log(
-      `The absolute difference between ${num1} and 19 is: ${difference}.`
+      `The absolute difference between ${num1} and 19 is: ${difference}. The triple of difference is ${tripleOfDifference}.`
     );
     return difference;
   } else {
     difference = 19 - num1;
+    tripleOfDifference = difference * 3;
     console.log(
-      `The absolute difference between 19 and ${num1} is: ${difference}.`
+      `The absolute difference between 19 and ${num1} is: ${difference}. The triple of difference is ${tripleOfDifference}.`
     );
     return difference;
   }
