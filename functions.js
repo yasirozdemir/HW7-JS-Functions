@@ -213,7 +213,7 @@ function cutString(string) {
 function cutStringAlternative(string) {
   woFirstAndLastChar = "";
   console.log(`The old version of the string: ${string} \n`);
-  for (i = 1; i < string.length; i++) {
+  for (i = 1; i < string.length - 1; i++) {
     woFirstAndLastChar += string[i];
   }
   console.log(`The old version of the string: ${woFirstAndLastChar} \n`);
@@ -226,7 +226,7 @@ cutString("EPICODE");
 
 console.log("\n----USING FOR LOOP---\n");
 
-cutString("TURKIYE");
+cutStringAlternative("TURKIYE");
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
